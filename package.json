@@ -1,0 +1,17 @@
+{
+  "name": "st-2021",
+  "version": "1.0.0",
+  "description": "Saoud ElTelawy Portfolio",
+  "main": "index.js",
+  "homepage": "https://saoudeltelawy.github.io/find-saoudeltelawy",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Saoud ElTelawy",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1"
+  }
+}

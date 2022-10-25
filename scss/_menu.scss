@@ -1,0 +1,209 @@
+// Menu Button ' The 3 lines ' 
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 30px;
+    top: 28px;
+    cursor: pointer;
+    @include easeOut;
+  
+    .btn-line {
+      width: 30px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: #fff;
+      @include easeOut;
+    }
+  
+    // Rotate Into X With Menu Lines
+    &.close {
+      transform: rotate(180deg);
+
+
+        // Make it rotate and X to Appear instead of Hamugrer Menu lines 
+      .btn-line { 
+        background-color: darken($color: #fff, $amount: 10);
+
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+          // background-color: $dark-color;
+          background-color: darken($color: #fff, $amount: 35);
+
+
+        }
+  
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+          // background-color: darken($color: #fff, $amount: 10);
+
+        }
+  
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(135deg) translate(-6px, 6px);
+          // background-color: $dark-color;
+          background-color: darken($color: #fff, $amount: 35);
+
+        }
+      }
+    }
+  }
+  
+  // Menu Overlay
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // opacity: 0.9;   // on & off
+    visibility: hidden;
+  
+    &.show {
+      visibility: visible;
+    }
+    
+    &-branding,
+    &-nav {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+
+      span{
+        letter-spacing: 2px;
+        color: $text-muted;
+
+        &.anim-gradient{
+
+          background: radial-gradient(
+            circle,
+            $primary-color 0%,
+            $secondary-color 20%,
+            $dark-color 40%,
+            #009996 60%,
+            $border-color 100%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          background-size: 400%;
+          animation: gradient 10s linear infinite alternate;
+          font-weight: 400;
+        font-size: 1.3rem;
+
+        }
+      }
+
+
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
+  
+    &-nav {
+      margin: 0;
+      padding: 0;
+      background: darken($primary-color, 5);
+      list-style: none;
+      transform: translate3d(0, -100%, 0);
+      @include easeOut;
+  
+      &.show {
+        // Slide in from top
+        transform: translate3d(0, 0, 0);
+      opacity: 0.9; 
+
+      }
+    }
+  
+    // Branding Side
+    &-branding {
+      background: $primary-color;
+      transform: translate3d(0, 100%, 0);
+      @include easeOut;
+
+    
+  
+      &.show {
+        // Slide in from bottom
+        transform: translate3d(0, 0, 0);
+
+      
+      }
+  
+      .portrait {
+        width: 270px;
+        height: 270px;
+        background: url('../img/personal/saud2.png');
+        background-position: left left;
+        // background-position: ;
+        background-size: cover;
+        // On & Off both filter 
+        // filter: drop-shadow(0 0 0.75rem $primary-color);
+        // filter: grayscale(70%);
+        border-radius: 50%;
+        border: solid 3px lighten($color: $secondary-color, $amount: 3%);
+
+        // test 
+        background-repeat: no-repeat;
+        // background-position: center center;
+        object-fit: fill;
+        // object-position: 0% 0%;
+
+      }
+
+      .image-grayscale-10{
+        filter: grayscale(25%);
+      }
+    }
+  
+    .nav-item {
+      transform: translate3d(600px, 0, 0);
+      @include easeOut;
+  
+      &.show {
+        // Slide in from right
+        transform: translate3d(0, 0, 0);
+      }
+  
+      &.current > a {
+        color: $secondary-color;
+      }
+    }
+  
+    .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      font-weight: 300;
+      color: set-text-color($primary-color);
+      text-decoration: none;
+      @include easeOut;
+  
+      &:hover {
+        color: $secondary-color;
+        transform: scale(1.1,1.2);
+      }
+    }
+  }
+  
+  // Delay each nav item slide by 0.1s
+  @for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+      transition-delay: $x * 0.1s;
+    }
+  }
+  

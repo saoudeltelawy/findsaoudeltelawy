@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hover Lib  -->
+    <link href="css/hover-min.css" rel="stylesheet" />
+    <!-- VenoBox Lib -->
+    <link
+      rel="stylesheet"
+      href="css/venobox.css"
+      type="text/css"
+      media="screen"
+    />
+    <!-- BS Grid  -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait image-grayscale-10"></div>
+          <span class="m-1 anim-gradient">Saoud ElTelawy</span>
+        </div>
+
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About Me </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> My Work </a>
+          </li>
+          <li class="nav-item current">
+            <a href="contact.html" class="nav-link"> How To Reach Me </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact">
+      <h1 class="lg-heading">
+        Contact
+        <span class="text-secondary">Me</span>
+      </h1>
+      <h3 class="sm-heading shadow-1">
+        Have a question or want to work together?
+      </h3>
+
+      <!-- 
+
+    <div class="boxes">
+      <div>
+        <span class="text-secondary">Email: </span> johndoe@test.com
+      </div>
+      <div>
+        <span class="text-secondary">Phone: </span> (555) 555-5555
+      </div>
+      <div>
+        <span class="text-secondary">Address: </span> 50 Main st Boston MA 02101
+      </div>
+    </div> -->
+      <!-- contact Form Section  -->
+      <section id="contact" class="parallax-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <!-- SECTION TITLE -->
+              <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                <!-- <p class="text-muted">Choose the way you want!</p> -->
+                <p class="text-muted">
+                  Leave a message and I&apos;ll get back to you...
+                </p>
+
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-10 mb-5">
+              <!-- CONTACT FORM HERE -->
+              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                <form
+                  id="contact-form"
+                  action="mail_handler.php"
+                  method="POST"
+                  name="”contact_form”"
+                >
+                  <div class="col-md-12 col-sm-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="”name”"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      name="message"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <div
+                    class="col-md-offset-8 col-md-8 col-sm-offset-6 col-sm-6"
+                  >
+                    <button
+                      id="submit"
+                      type="submit"
+                      class="form-control hvr-icon-drop"
+                      name="submit"
+                    >
+                      Send Message <i class="fas fa-envelope-open hvr-icon"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <!-- CONTACT INFO -->
+              <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
+                <div class="section-title">
+                  <h2>Contact Info</h2>
+                  <p>
+                    You can whatsapp, email or call me at any appropriate time.
+                  </p>
+                  <!-- On & Off  -->
+                  <!-- <small>Click the Location to find me on the Map.</small> -->
+                </div>
+
+                <p>
+                  <i class="fa fa-map-marker"></i
+                  ><a
+                    title="View Map"
+                    class="venobox_custom"
+                    data-vbtype="iframe"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27620.75489821039!2d31.311159090500198!3d30.077159739689606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e3dcdbdb80b%3A0x945cbd3c25bf8858!2sAl%20Golf%2C%20Nasr%20City%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1596651999744!5m2!1sen!2seg"
+                  >
+                    Nasr City, Cairo, Egypt</a
+                  >
+                </p>
+                <p>
+                  <i class="fa fa-comment"></i>
+                  <a title="Email Me" href="mailto:saoud.telawy@gmail.com"
+                    >saoud.telawy@gmail.com</a
+                  >
+                </p>
+                <p>
+                  <i class="fa fa-phone"></i>
+                  <a title="Call Now" href="tel:+201118008117">+201118008117</a>
+                </p>
+              </div>
+
+              <div class="resume">
+                <button class="btn button hvr-sweep-to-right">
+                  <a
+                    href="Saoud ElTelawy Curriculum Vitae .pdf"
+                    download="Saoud's Resume"
+                    ><i class="fas fa-cloud-download-alt"></i> Download
+                    Resume</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">Saoud ElTelawy &copy; 2022</footer>
+
+    <!-- Jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <!-- Venobox Lib  -->
+    <script type="text/javascript" src="js/venobox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Form Vaildation  -->
+  </body>
+</html>
