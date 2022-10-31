@@ -1,4 +1,5 @@
-<h1>Saoud ElTelawy Portfolio</h1>
+ <h1 align="center">Saoud ElTelawy Portfolio</h1> 
+
 
 <h3 align="center">Created from Scratch Using [Pure JS, Jquery, Bootstrap, Pure CSS & Grid]</h3>
 
