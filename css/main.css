@@ -801,11 +801,15 @@ main#home h1 {
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
-  width: 255px !important;
-  height: auto;
-  border-radius: 10%;
+  /* width: 255px !important; */
+  width: 400px !important;
+  height: 300px !important;
+  border-radius: 3%;
   /* border: #04c2c9 2px solid; */
-  border: #3c828a 3px solid;
+  /* border: #3c828a 3px solid; */
+  /* border: #e21b6d 1px solid; */
+  /* border: #e21b6d 1px solid; */
+  outline: 3px white solid;
 }
 
 .about-info .bio {
