@@ -277,7 +277,9 @@
   #about .bio-image {
     width: 16rem;
     height: 12rem;
+    /* border-radius: 60%; */
   }
+
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -328,6 +330,7 @@
   }
   main #home h1 {
     margin-top: 10vh;
+    text-shadow: none;
   }
   main .lg-heading {
     margin-top: 1rem;
@@ -515,6 +518,7 @@
   }
   main #home h1 {
     margin-top: 10vh;
+    text-shadow: none;
   }
   main .lg-heading {
     margin-top: 1rem;
@@ -692,9 +696,12 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 50px);
 }
+
 main .icons {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 5%;
 }
+
 main .icons a {
   padding: 0.4rem;
 }
@@ -707,6 +714,9 @@ main#home {
 }
 main#home h1 {
   margin-top: 20vh;
+  text-shadow: 0 2px 3px #747474, 1px 3px 4px #222, 0 8px 3px #474747,
+    0 11px 4px #747474, 0 14px 4px #565656, 0 17px 4px #343434,
+    0 20px 4px #171717;
 }
 
 .resume button {
@@ -787,14 +797,17 @@ main#home h1 {
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
+
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
   width: 255px !important;
   height: auto;
   border-radius: 10%;
-  border: #04c2c9 2px solid;
+  /* border: #04c2c9 2px solid; */
+  border: #3c828a 3px solid;
 }
+
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem;
@@ -817,11 +830,17 @@ main#home h1 {
 .about-info .bio a.special_a_tag {
   color: #868e96;
   opacity: 0.6;
+  transition: color 0.5s ease-in-out, box-shadow 0.9s ease-in-out;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  cursor: pointer;
 }
 .about-info .bio a.special_a_tag:hover {
-  color: black;
-  transition: all 0.5s ease-out;
+  color: white;
+  /* transition: all 0.5s ease-out; */
+  /* text-shadow: -1px -1px #eee; */
+  box-shadow: inset 700px 0 0 0 #54b3d6;
 }
+
 .about-info .job-1 {
   grid-area: job1;
 }
@@ -1284,6 +1303,7 @@ figure:hover cite {
   }
   main #home h1 {
     margin-top: 10vh;
+    text-shadow: none;
   }
   main .lg-heading {
     margin-top: 1rem;
@@ -1421,6 +1441,10 @@ figure:hover cite {
     margin-bottom: 10px;
     opacity: 0.25;
   }
+
+  .about-info .bio .bio-bio::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1471,6 +1495,7 @@ figure:hover cite {
   }
   main #home h1 {
     margin-top: 10vh;
+    text-shadow: none;
   }
   main .lg-heading {
     margin-top: 1rem;
@@ -1527,4 +1552,37 @@ figure:hover cite {
   #arrow_top:hover i {
     color: #04c2c9;
   }
+
+  .about-info .bio .bio-bio::after {
+    display: none;
+  }
+}
+
+/* Slider Plugin  */
+
+#slider {
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  padding: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  position: relative;
+  border-radius: 50%;
+}
+.slide {
+  list-style: none;
+}
+#slider > li {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.slider-img {
+  width: 80%;
+  height: 80%;
+  margin: 20px auto;
+  display: block;
 }
