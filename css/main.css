@@ -1152,6 +1152,9 @@ main#home h1 {
   padding-top: 0.5rem;
   padding-bottom: 0.85rem;
 }
+h2.tech_used {
+  color: #e31b6d;
+}
 
 .btn,
 .btn-dark,
