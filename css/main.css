@@ -275,8 +275,9 @@
     margin-top: 150px !important;
   }
   #about .bio-image {
-    width: 16rem;
+    width: 22rem;
     height: 12rem;
+    /* display: none; */
     /* border-radius: 60%; */
   }
 
@@ -322,8 +323,8 @@
     margin-bottom: 30px !important;
   }
   #about .bio-image {
-    width: 90%;
-    height: 90%;
+    width: 22rem;
+    height: 10rem;
   }
   main {
     padding: 2rem;
@@ -802,8 +803,8 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   /* width: 255px !important; */
-  width: 400px !important;
-  height: 300px !important;
+  width: 400px;
+  height: 300px;
   border-radius: 3%;
   /* border: #04c2c9 2px solid; */
   /* border: #3c828a 3px solid; */
@@ -1257,8 +1258,8 @@ figure:hover cite {
     margin-top: 150px !important;
   }
   #about .bio-image {
-    width: 16rem;
-    height: 14rem;
+    width: 22rem;
+    height: 18rem;
   }
   .projects {
     grid-template-columns: repeat(4, 1fr);
@@ -1302,8 +1303,8 @@ figure:hover cite {
     margin-bottom: 30px !important;
   }
   #about .bio-image {
-    width: 90%;
-    height: 90%;
+    width: 22rem;
+    height: 18rem;
   }
   main {
     padding: 2rem;
@@ -1355,8 +1356,9 @@ figure:hover cite {
 
 @media screen and (max-width: 768px) {
   #about .bio-image {
-    width: 16rem;
-    height: 14rem;
+    width: 22rem;
+    height: 18rem;
+    /* display: none; */
   }
   #contact .form-control {
     width: 120%;
