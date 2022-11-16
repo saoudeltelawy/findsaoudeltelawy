@@ -857,6 +857,11 @@ main#home h1 {
 }
 .about-info .job-1 img {
   margin: 0 1px;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
 }
 .about-info .job-1 .ml-1 {
   margin-left: 0.6rem;
@@ -867,6 +872,16 @@ main#home h1 {
 .about-info .job-1 .mt-2 {
   margin-top: 1.6rem;
 }
+
+.job-1 img:hover {
+  box-shadow: 0px 3px 0px 0px #1c242f;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 .about-info .job-2 {
   grid-area: job2;
 }
@@ -1492,6 +1507,7 @@ figure:hover cite {
     text-align: center;
     transform: translateX(0);
   }
+
   .about-info .job-3 {
     display: none;
   }
