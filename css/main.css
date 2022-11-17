@@ -849,14 +849,39 @@ main#home h1 {
 .about-info .job-1 {
   grid-area: job1;
 }
-.about-info .job-1 h3 {
+
+.about-info .job-1,
+.about-info .job-2,
+.about-info .job-3 {
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+
+.about-info .job-1:hover,
+.about-info .job-2:hover,
+.about-info .job-3:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.about-info .job-1:hover h3,
+.about-info .job-2:hover h3,
+.about-info .job-3:hover h3 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.about-info .job-1 h3,
+.about-info .job-2 h3,
+.about-info .job-3 h3 {
   color: #04c2c9;
-  margin-bottom: 1rem;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
+
 .about-info .job-1 img {
-  margin: 0 1px;
+  margin: 2.1% 1%;
   transition: all 0.7s ease-in-out;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -874,7 +899,8 @@ main#home h1 {
 }
 
 .job-1 img:hover {
-  box-shadow: 0px 3px 0px 0px #1c242f;
+  /* box-shadow: 0px 3px 0px 0px #1c242f; */
+  box-shadow: 2px 6px 5px 3px #1c242f;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -885,12 +911,7 @@ main#home h1 {
 .about-info .job-2 {
   grid-area: job2;
 }
-.about-info .job-2 h3 {
-  color: #04c2c9;
-  margin-bottom: 1rem;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-}
+
 .about-info .job-2 .ml-1 {
   margin-left: 0.6rem;
 }
@@ -903,11 +924,7 @@ main#home h1 {
 .about-info .job-3 {
   grid-area: job3;
 }
-.about-info .job-3 h3 {
-  color: #04c2c9;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-}
+
 .about-info .job-3 .slider {
   height: 100%;
   position: relative;
